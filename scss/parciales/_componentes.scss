@@ -1,0 +1,33 @@
+.hero{
+    display: flex;
+    padding: 0px 30px;
+    background-repeat: no-repeat;
+}    
+.hero_A .hero_B {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_B{
+    display: flex;
+    align-items: flex-start;
+}
+.hero_title{
+    display: flex;
+    padding-left: 10px;
+    font-size: 65px;
+    font-weight: 700;
+    text-transform: uppercase;
+    align-items: center;
+
+
+}
+.hero_box{
+width: 100%;
+}
+.hero img {
+    width: 100%;
+}
