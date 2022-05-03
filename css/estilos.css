@@ -6,12 +6,16 @@
 body {
   font-family: azo-sans-web, sans-serif;
   background-color: black;
-  background-image: url(./imagenes/base-universo.jpg);
+  background-image: url(/imagenes/base-universo.jpg);
   background-repeat: no-repeat;
-  object-fit: cover; }
+  object-fit: cover;
+  height: 100vh; }
 
 h1, h2, h3, h4, h5 {
   color: azure; }
+
+li a {
+  text-decoration: none; }
 
 .hero {
   display: flex;
@@ -42,6 +46,18 @@ h1, h2, h3, h4, h5 {
   padding-left: 50px;
   padding-right: 50px; }
 
+.foot {
+  background-color: rgba(12, 1, 31, 0.733);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 70px 70px;
+  color: #f2edd9; }
+
+.icon-list {
+  display: flex;
+  gap: 14px; }
+
 .nav_box {
   padding-left: 120px; }
 
@@ -64,4 +80,7 @@ h1, h2, h3, h4, h5 {
     text-align: center;
     align-items: center;
     flex-direction: column;
-    font-size: 30px; } }
+    font-size: 30px; }
+  .foot {
+    flex-direction: column;
+    align-items: center; } }
