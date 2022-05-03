@@ -5,15 +5,17 @@
 
 body {
   font-family: azo-sans-web, sans-serif;
-  background-color: black; }
+  background-color: black;
+  background-image: url(/imagenes/base-universo.jpg);
+  background-repeat: no-repeat;
+  object-fit: cover; }
 
 h1, h2, h3, h4, h5 {
   color: azure; }
 
 .hero {
   display: flex;
-  padding: 0px 60px;
-  height: 80vh; }
+  padding: 0px 60px; }
 
 .hero_A .hero_B {
   width: 50%;
@@ -39,6 +41,9 @@ h1, h2, h3, h4, h5 {
 .section1 {
   padding-left: 50px;
   padding-right: 50px; }
+
+.nav_box {
+  padding-left: 120px; }
 
 @media screen and (max-width: 1024px) {
   .hero {
