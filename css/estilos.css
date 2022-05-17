@@ -6,7 +6,7 @@
 body {
   font-family: azo-sans-web, sans-serif;
   background-color: black;
-  background-image: url(./imagenes/base-universo.jpg);
+  background-image: url(/imagenes/base-universo.jpg);
   background-repeat: no-repeat;
   object-fit: cover;
   height: 100vh; }
@@ -17,9 +17,14 @@ h1, h2, h3, h4, h5 {
 li a {
   text-decoration: none; }
 
+.repros {
+  display: flex;
+  width: 100%;
+  background-color: aqua; }
+
 .hero {
   display: flex;
-  padding: 0px 60px; }
+  height: 50vh; }
 
 .hero_A .hero_B {
   width: 50%;
@@ -37,6 +42,14 @@ li a {
   text-transform: uppercase;
   align-items: center; }
 
+.hero_subtitle {
+  display: flex;
+  padding-left: 10px;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  align-items: center; }
+
 .hero_box {
   display: flex;
   justify-content: center;
@@ -45,6 +58,30 @@ li a {
 .section1 {
   padding-left: 50px;
   padding-right: 50px; }
+
+.radio {
+  display: flex;
+  width: 99%;
+  margin: 12px;
+  justify-content: center;
+  align-items: center; }
+
+.reprovideo {
+  display: flex;
+  width: 40vw;
+  height: 80vh;
+  border-radius: 25px;
+  margin: auto;
+  justify-content: space-between; }
+
+.contenedorCanales {
+  display: flex;
+  padding: 30px;
+  justify-content: space-between; }
+
+.canalA .canalB {
+  width: 100%;
+  display: flex; }
 
 .foot {
   background-color: rgba(12, 1, 31, 0.733);
@@ -72,15 +109,27 @@ li a {
     display: flex;
     flex-direction: column;
     width: 100%;
-    text-align: center;
-    justify-content: center; }
+    margin: 1rem; }
   .hero_title {
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
     flex-direction: column;
-    font-size: 30px; }
+    font-size: 45px; }
+  .hero_subtitle {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 35px; }
   .foot {
     flex-direction: column;
-    align-items: center; } }
+    align-items: center; }
+  .contenedorCanales {
+    flex-direction: column; }
+  .reprovideo {
+    height: 50vh;
+    width: 80vw;
+    margin: 2rem; } }

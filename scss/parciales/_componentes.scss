@@ -1,21 +1,23 @@
-
-.hero{
+.hero {
     display: flex;
-    padding: 0px 60px;
-    
-    
-    
-}    
+
+    height: 50vh;
+
+
+
+}
+
 .hero_A .hero_B {
     width: 50%;
     display: flex;
 }
 
-.hero_B{
+.hero_B {
     display: flex;
     align-items: flex-start;
 }
-.hero_title{
+
+.hero_title {
     display: flex;
     padding-left: 10px;
     font-size: 78px;
@@ -24,14 +26,53 @@
     align-items: center;
 
 }
-.hero_box{
+
+.hero_subtitle {
+    display: flex;
+    padding-left: 10px;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    align-items: center;
+
+}
+.hero_box {
     display: flex;
     justify-content: center;
     width: 100%;
-    
+
 }
 
-.section1{
+.section1 {
     padding-left: 50px;
     padding-right: 50px;
+}
+
+// ---reproductor
+.radio {
+    display: flex;
+    width: 99%;
+    margin: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.reprovideo {
+    display: flex;
+    width: 40vw;
+    height: 80vh;
+    border-radius: 25px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.contenedorCanales {
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+}
+
+.canalA .canalB {
+    width: 100%;
+    display: flex;
 }
