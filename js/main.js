@@ -1,20 +1,23 @@
+
+
+
 const songList = [
     {
         title: "feel no pain",
         file: "Sade- Feel No Pain - Sade.mp3",
-        cover: "muestra-para-favi.png"
+        cover: "1.jpg"
     },
 
     {
         title: "Profugos nada personal",
         file: "Soda Stereo - Profugos nadapersonal.mp3",
-        cover: "muestra-para-favi.png"
+        cover: "2.jpg"
     },
 
     {
         title: "Maybe Tomorrow",
         file: "stereophonics - Maybe Tomorrow.mp3",
-        cover: "muestra-para-favi.png"
+        cover: "3.jpg"
     },
 ]
 
