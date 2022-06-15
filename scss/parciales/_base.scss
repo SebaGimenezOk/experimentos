@@ -1,7 +1,9 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+
+}
 
 
 body {
@@ -9,10 +11,10 @@ body {
     background-color: black;
     background-image: url(/imagenes/base-universo.jpg);
     background-repeat: no-repeat;
-    object-fit: cover;
     height: 100vh;
-
+    object-fit: cover;
 } 
+
 h1, h2, h3, h4, h5{
     color: azure;
 }
@@ -20,8 +22,5 @@ li a {
     text-decoration: none;
     
 }
-.repros{
-    display: flex;
-    width: 100%;
-    background-color: aqua;
-}
+
+

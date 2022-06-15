@@ -2,10 +2,34 @@
 @media screen and (max-width: 1024px) {
     .hero {
         display: flex;
-        flex-direction: column;
+        flex-direction: column !important;
+        flex-wrap: nowrap;
         width: 100%;
-
+        margin: 1rem;
     }
+
+    .hero2{
+        display: flex;
+        flex-direction: column !important;
+        flex-wrap: nowrap;
+        width: 100%;
+        margin: 1rem;
+    }
+    .hero3 {
+        display: flex;
+        flex-direction: column !important;
+        flex-wrap: nowrap;
+        width: 100%;
+        margin: 1rem;
+    }
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+    }
+
+
+
 }
 
 
@@ -15,44 +39,53 @@
 @media screen and (max-width: 600px) {
     .hero {
         display: flex;
-        flex-direction: column;
+        flex-direction: column !important;
+        flex-wrap: nowrap;
         width: 100%;
-
         margin: 1rem;
-
     }
 
-    .hero_title {
+    .hero2{
         display: flex;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        flex-direction: column;
-        font-size: 45px;
+        flex-direction: column !important;
+        flex-wrap: nowrap;
+        width: 100%;
+        margin: 1rem;
+    }
+    .hero3 {
+        display: flex;
+        flex-direction: column !important;
+        flex-wrap: nowrap;
+        width: 100%;
+        margin: 1rem;
     }
 
-    .hero_subtitle {
+
+
+
+
+    .navbar-nav {
         display: flex;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
         flex-direction: column;
-        font-size: 35px;
+        align-items: center;
+        
     }
+
+
     .foot {
         flex-direction: column;
         align-items: center;
     }
 
-    .contenedorCanales {
+    .nav.controls {
+        display: flex;
+        align-items: center;
         flex-direction: column;
-    }
+        flex-wrap: nowrap;
 
-    .reprovideo {
-        height: 50vh;
-        width: 80vw;
-        margin: 2rem;
 
     }
+
+
 
 }

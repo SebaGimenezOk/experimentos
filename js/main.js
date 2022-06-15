@@ -1,67 +1,33 @@
+const audio = document.querySelector(".audio");
+const playButton = document.querySelector(".play");
+const playButtonIcon = playButton.querySelector("i")
+const stopButton = document.querySelector(".stop")
 
 
+audio.addEventListener("click", playPauseAudio)
+playButton.addEventListener("click", playPauseAudio)
+stopButton.addEventListener("click", stopAudio)
 
-const songList = [
-    {
-        title: "feel no pain",
-        file: "Sade- Feel No Pain - Sade.mp3",
-        cover: "1.jpg"
-    },
+function playPauseAudio() {
 
-    {
-        title: "Profugos nada personal",
-        file: "Soda Stereo - Profugos nadapersonal.mp3",
-        cover: "2.jpg"
-    },
-
-    {
-        title: "Maybe Tomorrow",
-        file: "stereophonics - Maybe Tomorrow.mp3",
-        cover: "3.jpg"
-    },
-]
-
-// capturar del DOM 
-const songs = document.getElementById("songs");
-const audio = document.getElementById("audio");
-const cover = document.getElementById("cover");
-
-
-
-
-//  accion cargar canciones mostrar lista 
-function loadSongs() {
-    songList.forEach((song, index) => {
-        // crear li
-        const li = document.createElement("li")
-        //crear a 
-        const link = document.createElement("a")
-        //hidrata a
-        link.textContent = song.title
-        link.href = "#"
-        link.addEventListener("click", () => loadSong(index))
-
-        li.appendChild(link)
-        //añadir li a ul
-
-        songs.appendChild("li")
-
-    })
+    audio[audio.paused ? "play" : "pause"]()
+    playButtonToggleIcon()
 }
 
 
-function loadSong(songIndex) {
-    audio.src = "./audio/" + songList[songIndex].file
-    audio.play()
-
-    changeCover(songIndex)
-
+function playButtonToggleIcon() {
+    if (audio.paused) {
+        playButtonIcon.classList.remove("fa-pause")
+        playButtonIcon.classList.add("fa-play")
+    } else {
+        playButtonIcon.classList.remove("fa-play")
+        playButtonIcon.classList.add("fa-pause")
+    }
 }
 
-function changeCover(songIndex) {
-    cover.src= "./imagenes/" + songList[songIndex].cover
+function stopAudio() {
+    audio.pause()
+    audio.currentTime = 0
+    playButtonToggleIcon()
+
 }
-
-
-// accion GO-- 
-loadSongs()

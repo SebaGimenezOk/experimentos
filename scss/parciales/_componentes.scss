@@ -1,203 +1,71 @@
+// reproductor
+
+.player {
+    // background-image: linear-gradient(yellow, orange);
+    // box-shadow: 2px 2px 1rem black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.controls>* {
+    cursor: pointer;
+}
+
+.controls {
+    display: flex;
+    padding: 8px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+    color: rgba(12, 4, 59, 0.856);
+
+}
+
+.button i {
+    font-size: 12rem;
+
+
+
+}
+.hero .hero2 .hero3{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 .hero {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    // background-image: linear-gradient(yellow, orange);
+    gap: 2rem;
+    text-transform: uppercase;
+}
 
+.hero2 {
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+    align-items: center;
+    text-transform: uppercase;
+    gap: 2rem;
+
+
+}
+
+.hero3 {
+    display: flex;
+    justify-content: center;
     height: 50vh;
-
-
-
-}
-
-.hero_A .hero_B {
-    width: 50%;
-    display: flex;
-}
-
-.hero_B {
-    display: flex;
-    align-items: flex-start;
-}
-
-.hero_title {
-    display: flex;
-    padding-left: 10px;
-    font-size: 78px;
-    font-weight: 700;
+    align-items: center;
     text-transform: uppercase;
-    align-items: center;
+    gap: 2rem;
 
-}
-
-.hero_subtitle {
-    display: flex;
-    padding-left: 10px;
-    font-size: 48px;
-    font-weight: 700;
-    text-transform: uppercase;
-    align-items: center;
-
-}
-
-.hero_box {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-
-}
-
-.section1 {
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-// ---reproductor
-.radio {
-    display: flex;
-    width: 99%;
-    margin: 12px;
-    justify-content: center;
-    align-items: center;
-}
-
-.reprovideo {
-    display: flex;
-    width: 40vw;
-    height: 80vh;
-    border-radius: 25px;
-    margin: auto;
-    justify-content: space-between;
-}
-
-.contenedorCanales {
-    display: flex;
-    padding: 30px;
-    justify-content: space-between;
-}
-
-.canalA .canalB {
-    width: 100%;
-    display: flex;
-}
-
-// -------------------REPRODUCTOR---
-.player {
-    height: 95vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.details {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 25px;
-}
-
-.track-art {
-    margin: 25px;
-    height: 250px;
-    width: 250px;
-    background-image: url("https://images.pexels.com/photos/262034/pexels-photo-262034.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
-    background-size: cover;
-    border-radius: 15%;
-}
-
-.now-playing {
-    font-size: 1rem;
-}
-
-.track-name {
-    font-size: 3rem;
-}
-
-.track-artist {
-    font-size: 1.5rem;
-}
-
-.buttons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.playpause-track,
-.prev-track,
-.next-track {
-    padding: 25px;
-    opacity: 0.8;
-
-    /* Smoothly transition the opacity */
-    transition: opacity .2s;
-}
-
-.playpause-track:hover,
-.prev-track:hover,
-.next-track:hover {
-    opacity: 1.0;
-}
-
-.slider_container {
-    width: 75%;
-    max-width: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Modify the appearance of the slider */
-.seek_slider,
-.volume_slider {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    height: 5px;
-    background: black;
-    opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-}
-
-/* Modify the appearance of the slider thumb */
-.seek_slider::-webkit-slider-thumb,
-.volume_slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    width: 15px;
-    height: 15px;
-    background: white;
-    cursor: pointer;
-    border-radius: 50%;
-}
-
-.seek_slider:hover,
-.volume_slider:hover {
-    opacity: 1.0;
-}
-
-.seek_slider {
-    width: 60%;
-}
-
-.volume_slider {
-    width: 30%;
-}
-
-.current-time,
-.total-duration {
-    padding: 10px;
-}
-
-i.fa-volume-down,
-i.fa-volume-up {
-    padding: 10px;
-}
-
-i.fa-play-circle,
-i.fa-pause-circle,
-i.fa-step-forward,
-i.fa-step-backward {
-    cursor: pointer;
 }
